@@ -1,5 +1,5 @@
---// Shinichi Hub 
---// Created by baor im just code in 2 week
+--// Cat Hub Chest Farm Script for Blox Fruits
+--// Created by Catdzs1vn - discord: catdzs1vn - Fb: Bùi Now Quý
 
 --// Get World
 if game.PlaceId == 2753915549 then
@@ -336,7 +336,7 @@ spawn(localChat)
 
 --// Notify
 local NotifyConfig = {
-    Title = "Shinichi Hub",
+    Title = "Cat Hub",
     Description = "",
     Content = "",
     Color = Color3.fromRGB(131, 181, 255),
@@ -626,7 +626,7 @@ FarmImage.Parent = FarmFrame
 local FarmTitle = Instance.new("TextLabel")
 FarmTitle.Name = "FarmTitle"
 FarmTitle.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.ExtraBold)
-FarmTitle.Text = "Shinichi Hub Auto Chest [ Premium ]"
+FarmTitle.Text = "Cat Hub • [Chest]"
 FarmTitle.TextColor3 = Color3.fromRGB(131, 181, 255)
 FarmTitle.TextSize = 16
 FarmTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1031,7 +1031,7 @@ local function sendWebhook(title, description, chestCount, elapsedTime, isSpecia
     local player = game.Players.LocalPlayer
     local pingUserId = webhookConfig["UserId"]
     local payload = {
-        username = "Shinichi Hub",
+        username = "Cat Hub Notify",
         avatar_url = "https://cdn.discordapp.com/attachments/1235175527673761835/1355783030102425701/new_logo.png?ex=67ea2ed7&is=67e8dd57&hm=7d1398e9cdd9f040b93a6560f73390a764e29d56646a4261b7e4351cebdf1e04&",
         content = pingUserId and pingUserId ~= "" and "<@" .. pingUserId .. ">" or "",
         embeds = {{
@@ -1979,10 +1979,10 @@ end)
 
 --// Get Notify Loaded
 getgenv().Notify({
-    Title = "ShinichiHub",
+    Title = "Cat Hub Loaded",
     Description = "Blox Fruits",
     Content = "Script Stat: 🟢",
     Color = Color3.fromRGB(131, 181, 255),
     Time = 0.7,
     Delay = 5
-})game.PlaceId
+})
